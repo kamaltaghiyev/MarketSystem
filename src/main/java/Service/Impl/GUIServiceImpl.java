@@ -11,6 +11,7 @@ import static Model.Categories.*;
 
 public class GUIServiceImpl implements GUIService {
     public static int choice = 0;
+
     public void GUI(){
         while (choice != 3) {
             System.out.println("Hello you are starting market application!\n" +
@@ -89,10 +90,14 @@ public class GUIServiceImpl implements GUIService {
                         case 7:
                             productService.selectByName();
                     }
+                    break;
                 case 2:
 
-
-
+                case 3:
+                    System.out.println("Quit......");
+                    break;
+                default:
+                    System.out.println("Enter number between 1-3\n");
             }
         }
     }

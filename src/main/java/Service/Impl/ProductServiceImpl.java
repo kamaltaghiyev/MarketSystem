@@ -14,6 +14,7 @@ import static Model.Categories.*;
 public class ProductServiceImpl implements ProductService {
     private static int counter = 0;
     HashMap<String,ProductModel> product = new HashMap<>();
+
     @Override
     public void addProduct() {
         String id = count();
@@ -311,6 +312,9 @@ public class ProductServiceImpl implements ProductService {
         }
 
     }
+
+
+
 
     private static String count() {
         counter++;

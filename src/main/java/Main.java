@@ -8,6 +8,7 @@ import static Model.Categories.FRUIT_AND_VEGETABLES;
 
 public class Main {
     public static void main(String[] args) {
+
         GUIServiceImpl guiService = new GUIServiceImpl();
         guiService.GUI();
     }
