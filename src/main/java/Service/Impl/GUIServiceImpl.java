@@ -7,7 +7,6 @@ import Service.GUIService;
 
 import java.util.Scanner;
 
-import static Model.Categories.*;
 
 public class GUIServiceImpl implements GUIService {
     public static int choice = 0;

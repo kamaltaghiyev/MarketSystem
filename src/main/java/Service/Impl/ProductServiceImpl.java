@@ -13,7 +13,7 @@ import static Model.Categories.*;
 
 public class ProductServiceImpl implements ProductService {
     private static int counter = 0;
-    HashMap<String,ProductModel> product = new HashMap<>();
+    static HashMap<String,ProductModel> product = new HashMap<>();
 
     @Override
     public void addProduct() {
@@ -29,7 +29,7 @@ public class ProductServiceImpl implements ProductService {
         Scanner inputProductAmount = new Scanner(System.in);
         double amountInStock = inputProductAmount.nextDouble();
         System.out.println("Select category from the list by its index: \n");
-        Categories[] arr = Categories.values();
+        Categories arr[] = Categories.values();
         for (Categories categories: arr){
             System.out.println((categories.ordinal()+1)+"->"+ categories+"\n");
         }

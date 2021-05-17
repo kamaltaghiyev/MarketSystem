@@ -11,7 +11,6 @@ public class ProductModel {
         this.name = name;
         this.price = price;
         this.amountInStock = amountInStock;
-
         this.categories=categories;
     }
 
