@@ -67,6 +67,7 @@ public class GUIServiceImpl implements GUIService {
                                     Scanner inputProductChangeAmount = new Scanner(System.in);
                                     double choiceProductChangeAmount = inputProductChangeAmount.nextDouble();
                                     productService.changeProductAmountINStock(choiceProductIndex,choiceProductChangeAmount);
+                                    break;
                                 case 4:
                                     productService.changeProductCategories();
                                     break;
