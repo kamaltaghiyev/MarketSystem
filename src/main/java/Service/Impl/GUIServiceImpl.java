@@ -89,6 +89,7 @@ public class GUIServiceImpl implements GUIService {
                             break;
                         case 7:
                             productService.selectByName();
+                            break;
                     }
                     break;
                 case 2:
